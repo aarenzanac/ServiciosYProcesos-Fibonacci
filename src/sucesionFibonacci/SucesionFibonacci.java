@@ -13,7 +13,7 @@ public class SucesionFibonacci {
 		int num3 = PideDatos.pideEntero("Introduzca el tercer número");
 		int num4 = PideDatos.pideEntero("Introduzca el cuarto número");
 		
-		
+		Fibonacci.calculoFibonacci(10);
 	}
 
 }
