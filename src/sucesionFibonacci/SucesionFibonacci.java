@@ -13,7 +13,13 @@ public class SucesionFibonacci {
 		int num3 = PideDatos.pideEntero("Introduzca el tercer número");
 		int num4 = PideDatos.pideEntero("Introduzca el cuarto número");
 		
-		Fibonacci.calculoFibonacci(10);
+		RunThread rt1 = new RunThread("Hilo 1", num1);
+		rt1.start();
+		RunThread rt2 = new RunThread("Hilo 2", num2);
+		rt2.start();
+		RunThread rt3 = new RunThread("Hilo 3", num3);
+		rt3.start();
+		RunThread rt4 = new RunThread("Hilo 4", num4);
+		rt4.start();
 	}
-
 }
